@@ -54,7 +54,7 @@ var wizard = {
 
 Неправильно:
 ```js
-function function1(names) {
+var function1 = function(names) {
   names.forEach(function (name) {
     console.log(name);
   });
@@ -74,7 +74,7 @@ var randomNumber = function() {
 
 Правильно:
 ```js
-var function printNames(names) {
+var printNames = function(names) {
   names.forEach(function (name) {
     console.log(name);
   });
@@ -108,7 +108,7 @@ var wizard = function (name, age) {
   this.age = age;
 }
 
-function Fly(coordinate) {
+var Fly = function(coordinate) {
   console.log('Смотрите я лечу!')
 }
 ```
@@ -120,7 +120,7 @@ var Wizard = function (name, age) {
   this.age = age;
 }
 
-function fly(coordinate) {
+var fly = function(coordinate) {
   console.log('Смотрите я лечу!')
 }
 ```
